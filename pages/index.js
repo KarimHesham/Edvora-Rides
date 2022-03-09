@@ -32,7 +32,6 @@ export default function Home({ data }) {
       distance = Math.abs(distance);
       ride.distance = distance;
     });
-    // console.log(data?.rides);
   };
 
   return (
