@@ -12,13 +12,13 @@ function Card({
   distance,
 }) {
   return (
-    <div className="flex items-center justify-between bg-gray-900 mx-8 my-2 px-6 py-6 text-white rounded-lg ">
-      <div className="flex space-x-8">
+    <div className="flex justify-between bg-gray-900 mx-8 my-2 px-6 py-6 text-white rounded-lg ">
+      <div className="flex space-x-8 ">
         <Image
           src={map}
           width="250"
           height="125"
-          className="border rounded-lg"
+          className="rounded-lg"
           loading="lazy"
         />
         <div>
@@ -30,11 +30,11 @@ function Card({
         </div>
       </div>
 
-      <div className="flex space-x-6 text-xs mb-auto">
-        <p className="bg-black flex items-center px-2 py-1 rounded-full">
+      <div className="md:flex md:space-x-4 text-xs mb-auto">
+        <p className="bg-black px-2 py-1 rounded-full">
           {city.slice(0, 5)}
         </p>
-        <p className="bg-black flex item-center px-2 py-1 rounded-full">
+        <p className="bg-black px-2 py-1 rounded-full">
           {state.slice(0, 5)}
         </p>
       </div>
